@@ -12,3 +12,5 @@ print aString.translate(allchars, '1')
 keep = sets.Set(map(ord, 'abc'))
 
 print len(keep)
+
+print keep

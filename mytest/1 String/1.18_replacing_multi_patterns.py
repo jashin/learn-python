@@ -9,6 +9,7 @@ def multiple_replace(text, adict):
 # re.sub takes three mandatory parameters like this:
 # re.sub(pattern, repl, string, count=0, flags=0)
 # But in above code, it only passes two, the first one
-# is a callback returns a dict, I guess that is count as two? 
+# is a callback returns a dict, and re.sub calls it with a 
+# re.MatchObject instance
 
 print multiple_replace('a b c d e f g h i j', {'a':'1','f':'2'})
